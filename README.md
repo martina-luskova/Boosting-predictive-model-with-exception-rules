@@ -1,3 +1,20 @@
+This thesis presents a novel hybrid approach to predictive modelling that enhances logistic
+regression with exception rules. While regression-based models are widely used for their
+simplicity and generalisation ability, they often fail to capture localised, non-linear patterns.
+To address this limitation, the proposed algorithm integrates rule-based refinement into a
+standard logistic regression model by mining exception rules using the 4ft-Miner algorithm.
+These rules identify compact and interpretable subgroups in the data with elevated prediction
+confidence and are used to boost the baseline model. The hybrid model is implemented in
+Python and evaluated on the Telco Customer Churn dataset. The results show that while
+the overall predictive accuracy of the hybrid and baseline models is comparable, performance
+improved in uncertain prediction regions, instances where logistic regression predicted class
+probabilities near 0.5. Notably, some individual rules showed strong generalisation and sub-
+stantially outperformed the baseline model in their respective subspaces. The design also
+incorporated techniques to prevent overfitting, including training-only rule mining, support
+constraints, and rule complexity limits. The findings confirm that boosting predictive models
+with exception rules is not only feasible but also beneficial in enhancing interpretability and
+performance.
+
 ALGORITHM:
 1. Data splitting: The dataset is divided into a training and testing set using stratified
 sampling.
