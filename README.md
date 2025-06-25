@@ -1,3 +1,4 @@
+ALGORITHM:
 1. Data splitting: The dataset is divided into a training and testing set using stratified
 sampling.
 2. Training the baseline model: A logistic regression model is trained on the training set,
